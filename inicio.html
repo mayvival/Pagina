@@ -6,31 +6,66 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+    
+    
 <style>
-html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, "old"; src:url(old.ttx.ttf) }
 .mySlides {display:none}
 .w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+.w3-tag {height:10x;width:10x;padding:0;margin-top:6px}
+
 </style>
 <body>
 
+    
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+  </div>
+</div>
+    
+    
+    
+    <br/>
+
+    <!-- Header -->
+<header class="w3-container w3-grey w3-center" style="padding:20px 10px">
+     <br/>
+    <br/>
+<h1 class="w3-margin w3-jumbo" style= "font-family:inherit">Institución Educativa San José Marello</h1>
+  <p class="w3-xlarge">La Molina</p>
+
+</header>
+    
+    
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-large w3-light-grey">
+  <div class="w3-row w3-large w3-black">
     
-      <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block">¿Quiénes somos?</a>
+      <div class="w3-col s2">
+      <a href="#nosotros" class="w3-button w3-block">¿Quiénes somos?</a>
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
       <a href="#plans" class="w3-button w3-block">Comunidad Educativa</a>
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
       <a href="#about" class="w3-button w3-block">Calendario Académico</a>
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
       <a href="#contact" class="w3-button w3-block">Reglamento Interno</a>
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col s2">
       <a href="buenaonda.html" class="w3-button w3-block">BUENA ONDA!</a>
     </div>
   </div>
@@ -40,21 +75,21 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 <div class="w3-content" style="max-width:1000px;margin-top:80px;margin-bottom:80px">
 
   <div class="w3-panel">
-    <h1><b>Nosotros</b></h1>
+    <h1><b>Nosotros!</b></h1>
   </div>
 
   <!-- Slideshow -->
-<div class="w3-container"  style="max-width:1100px;margin-top:80px;margin-bottom:80px"> 
+<div class="w3-container"  style="max-width:1100px;margin-top:50px ;margin-bottom:80px"> 
     <div class="w3-display-container mySlides" style="margin-right: 50px; margin-left: 50px">
-      <img src="foto1.jpg" style="width:100%">
+      <img src="f1.jpg" style="width:100%">
     </div>
       
 <div class="w3-display-container mySlides">
-      <img src="foto2.jpg" style="width:100%">
+      <img src="f2.jpg" style="width:100%">
 
     </div>
 <div class="w3-display-container mySlides">
-      <img src="foto3.jpg" style="width:100%">
+      <img src="f3.jpg" style="width:100%">
     </div>
 
     <!-- Slideshow next/previous buttons -->
@@ -70,7 +105,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     </div>
   </div>
   
-<div class = "container" style = "margin-top:30px">
+<div class = "container" style = "margin-top:30px" id="nosotros">
      <h1> Misión </h1>
     <p>Brindamos una formación integrala nuestros educandos y desarrollamos el pensamiento reflexivo-crítico, el proceso de la meta-cognición, promoviendo el desarrollo de sus capacidades emprendedoras orientadas a la resolución de problemas en su visa diaria; teniendo como base la práctica de los valores cristianos, imitando a nuetsro SAN JOSÉ MARELLO, ejemplo de vida y paz para enfrentarse al mundo con éxito</p>
 <br/>
@@ -79,7 +114,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     <p>En el marco de una educación inclusiva e intercultural con igualdad de oportunidad para todos y fomentando una educación para la gestión de riesgos y conciencia ambiental.</p>
 <br/> 
     <h1>Reseña Histórica</h1>
-    <p>La Institución Educativa "San José Marello" 1220, ubicada en la calle Madre Selva 110 de la Cooperativa MUSA, del Distrito de la Molina, fue creada un 15 de febrero de 1979 mediante R.D N°0211; se inició por la gestión de un grupo de..........</p>
+    <p>La Institución Educativa "San José Marello" 1220, ubicada en la calle Madre Selva 110 de la Cooperativa MUSA, del Distrito de la Molina, fue creada un 15 de febrero de 1979 mediante R.D N°0211; se inició por la gestión de un grupo de </p>
 </div>
     
     
