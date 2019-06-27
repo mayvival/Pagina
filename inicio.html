@@ -6,18 +6,58 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 
     
     
 <style>
-html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, "old"; src:url(old.ttx.ttf) }
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.ttx.ttf) }
 .mySlides {display:none}
 .w3-tag, .fa {cursor:pointer}
 .w3-tag {height:10x;width:10x;padding:0;margin-top:6px}
 
+    
+    
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("g5.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+    
+ body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}   
 </style>
 <body>
 
@@ -34,19 +74,17 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, "old"; src:url(old.ttx.tt
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
   </div>
 </div>
-    
-    
-    
+
     <br/>
 
-    <!-- Header -->
-<header class="w3-container w3-grey w3-center" style="padding:20px 10px">
-     <br/>
-    <br/>
-<h1 class="w3-margin w3-jumbo" style= "font-family:inherit">Institución Educativa San José Marello</h1>
-  <p class="w3-xlarge">La Molina</p>
-
-</header>
+  <!-- Header -->   
+ <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Institución Educativa San José Marello</h1>
+    <p>La Molina</p>
+  </div>
+</div>   
+    
     
     
 <!-- Links (sit on top) -->
@@ -71,6 +109,18 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, "old"; src:url(old.ttx.tt
   </div>
 </div>
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <!-- Content -->
 <div class="w3-content" style="max-width:1000px;margin-top:80px;margin-bottom:80px">
 
