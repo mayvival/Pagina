@@ -43,7 +43,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
   display: inline-block;
   padding: 10px 25px;
   color: black;
-  background-color:red;
+  background-color:indianred;
   text-align: center;
   cursor: pointer;
 }
@@ -84,12 +84,12 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: indianred;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: indianred;
 }
 
 /* Style the tab content */
@@ -112,26 +112,13 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
 </style>
 <body>
 
-    
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
-  </div>
-</div>
 
     <br/><br/>
 
   <!-- Header -->   
  <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">Institución Educativa San José Marello</h1>
+    <h1 style="font-size:50px"> <img src="titulo2.png" width= "1300" height="100" autoalt="#"></h1>
     <p>La Molina</p>
   </div>
 </div>   
@@ -140,10 +127,10 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
     
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-large w3-black">
+  <div class="w3-row w3-large" style= "background: darkred">
     
-      <div class="w3-col s2">
-      <a href="#nosotros" class="w3-button w3-block">¿Quiénes somos?</a>
+      <div class="w3-col s2" >
+      <a href="#nosotros" class="w3-button w3-block" >¿Quiénes somos?</a>
     </div>
     <div class="w3-col s2">
       <a href="#plans" class="w3-button w3-block">Comunidad Educativa</a>
@@ -155,7 +142,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
       <a href="#contact" class="w3-button w3-block">Reglamento Interno</a>
     </div>
     <div class="w3-col s2">
-      <a href="buenaonda.html" class="w3-button w3-block">BUENA ONDA!</a>
+      <a href="buenaonda.html" class="w3-button w3-block"><img src="buena2.png" width= "150" height="30" autoalt="#"></a>
     </div>
   </div>
 </div>
@@ -204,28 +191,30 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
     
 <div class="tab"  >
   
-    <button class="tablinks" onclick="openCity(event, 'Misión')" id="defaultOpen">Misión</button>
-  <button class="tablinks" onclick="openCity(event, 'Visión')">Visión</button>
-  <button class="tablinks" onclick="openCity(event, 'Reseña Histórica')">Reseña histórica</button>
+    <button class="tablinks" onclick="openCity(event, 'Misión')" id="defaultOpen"><img src="misi%C3%B3n.png" width= "100" height="30" autoalt="Misión"></button>
+  <button class="tablinks" onclick="openCity(event, 'Visión')"><img src="Vision.png" width= "100" height="30" autoalt="Misión"></button>
+  <button class="tablinks" onclick="openCity(event, 'Reseña Histórica')"><img src="Rese%C3%B1a.png" width= "200" height="50" autoalt="Misión"></button>
 </div>
 
-<div id="Misión" class="tabcontent">
+<div id="Misión" class="tabcontent w3-light-grey" >
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Misión</h3>
+     <h1>Misión</h1>
   <p>Brindamos una formación integrala nuestros educandos y desarrollamos el pensamiento reflexivo-crítico, el proceso de la meta-cognición, promoviendo el desarrollo de sus capacidades emprendedoras orientadas a la resolución de problemas en su visa diaria; teniendo como base la práctica de los valores cristianos, imitando a nuetsro SAN JOSÉ MARELLO, ejemplo de vida y paz para enfrentarse al mundo con éxito.</p>
 </div>
 
-<div id="Visión" class="tabcontent">
+<div id="Visión" class="tabcontent w3-light-grey">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Visión</h3>
   <p>La I.E N°1220 "SAN JOSÉ MARELLO", en el 2021 será reconocida como líder por promover una educación cristiana, científica, humanista y tecnológica, generando valores y capacidades emprendedoras en los estudiantes.</p>
   <p> En el marco de una educación inclusiva e intercultural con igualdad de oportunidad para todos y fomentando una educación para la gestión de riesgos y conciencia ambiental. </p>
 </div>
 
-<div id="Reseña Histórica" class="tabcontent" >
+<div id="Reseña Histórica" class="tabcontent w3-light-grey" >
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Reseña Histórica</h3>
-  <p>La Institución Educativa "San José Marello" 1220, ubicada en la calle Madre Selva 110 de la Cooperativa MUSA, del Distrito de la Molina, fue creada un 15 de febrero de 1979 mediante R.D N°0211; se inició por la gestión de un grupo de....</p>
+  <p>La Institución Educativa "San José Marello" 1220 se encuentra ubicada en la Cooperativa de vivienda Musa del  Distrito de La Molina, Fue creada inicialmente para el nivel primaria el 15 de Febrero de 1979  con RD. N°0211 y posteriormente amplia su servicio al nivel secundaria mediante Rd. N°2321 de fecha 20 de agosto de 1985 y modalidad de adultos con Rd. 0772  Además cuenta con una plana docente debidamente calificada y actualizada, con título pedagógico y con estudios de post grado, los que orientan la formación de 2,000 educandos que actualmente reciben, brindando un servicio con la vanguardia de las innovaciones pedagógicas haciendo honor a su lema Marelliano “Disciplina, paz y trabajo”. </p>
+    <p>En sus 28 años de existencia participo constantemente en los diversos concursos organizados por la UGEL 06 a la que pertenece, de la Municipalidad de la Molina y demás instituciones del distrito de la Molina. Es una I.E. Que cuenta con una moderna infraestructura ejecutada por INFES en 1998 siendo las secciones en el nivel primaria y secundaria 20,  y en la modalidad de adultos 16 secciones.</p>
+    <p>Cuenta con 1 laboratorio de química, física y biología, 1 biblioteca, 1 sala de cómputo y otros servicios para el estudiante como industria del vestido y Ebanistería.</p>
 </div>    
     
 
@@ -239,23 +228,28 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
       <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Comunidad educativa </span>
     </div>
     <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+   <img src="estudiante2.png" style="width:100%" alt="Avatar">
+        
       <h3>Estudiantes</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p> La Institución Educativa en el nivel secundario cuenta con 700 estudiantes en 20 aulas distribuidos aleatoriamente.</p>
     </div>
 
     <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-      <h3>Docentes</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+       <img src="profesores.png" style="width:100%" alt="Avatar"> 
+        <h3>Docentes</h3>
+      <p>La Institución Educativa en el nivel secundario cuenta con 29 profesores basándose en una metodología activa dentro del constructivismo.</p>
     </div>
 
-    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-      <h3>Padres de Familia</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-14">
+       <img src="padres.png" style="width:100%" alt="Avatar"> 
+        <h3>Padres de Familia</h3>
+      <p>Los Padres de familia cuentan con la disponibilidad de cada profesor una vez por semana para absolver inquietudes. </p>
     </div>
 
     <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+       <img src="directora.png" style="width:100%" alt="Avatar">
       <h3> Dirección</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p> La dirección de la Institución Educativa esta a cargo de Gladys Julissa Quevedo Vegas y la subdirección a cargo de Raymond Puelles Torres.</p>
     </div>
   </div>
 
