@@ -17,12 +17,12 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
 .w3-tag, .fa {cursor:pointer}
 .w3-tag {height:10x;width:10x;padding:0;margin-top:6px}
 
-    
+   /* estilos de background */   
     
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("g5.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("g6.jpeg");
   height: 50%;
-  background-position: center;
+  background-position: up;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -43,7 +43,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
   display: inline-block;
   padding: 10px 25px;
   color: black;
-  background-color: #ddd;
+  background-color:red;
   text-align: center;
   cursor: pointer;
 }
@@ -58,6 +58,57 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }   
+    
+    /* estilos de cuadro: mision vision */
+    
+    
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: indianred;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: indianred;
+  float: ;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 30px;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+    
 </style>
 <body>
 
@@ -75,7 +126,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
   </div>
 </div>
 
-    <br/>
+    <br/><br/>
 
   <!-- Header -->   
  <div class="hero-image">
@@ -110,19 +161,8 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
 </div>
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 <!-- Content -->
-<div class="w3-content" style="max-width:1000px;margin-top:80px;margin-bottom:80px">
+<div class="w3-content" style="max-width:900px;margin-top:80px;margin-bottom:80px">
 
   <div class="w3-panel">
     <h1><b>Nosotros!</b></h1>
@@ -155,19 +195,40 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
     </div>
   </div>
   
-<div class = "container" style = "margin-top:30px" id="nosotros">
-     <h1> Misión </h1>
-    <p>Brindamos una formación integrala nuestros educandos y desarrollamos el pensamiento reflexivo-crítico, el proceso de la meta-cognición, promoviendo el desarrollo de sus capacidades emprendedoras orientadas a la resolución de problemas en su visa diaria; teniendo como base la práctica de los valores cristianos, imitando a nuetsro SAN JOSÉ MARELLO, ejemplo de vida y paz para enfrentarse al mundo con éxito</p>
-<br/>
-    <h1>Visión</h1>
-    <p>La I.E N°1220 "SAN JOSÉ MARELLO", en el 2021 será reconocida como líder por promover una educación cristiana, científica, humanista y tecnológica, generando valores y capacidades emprendedoras en los estudiantes.</p>
-    <p>En el marco de una educación inclusiva e intercultural con igualdad de oportunidad para todos y fomentando una educación para la gestión de riesgos y conciencia ambiental.</p>
-<br/> 
-    <h1>Reseña Histórica</h1>
-    <p>La Institución Educativa "San José Marello" 1220, ubicada en la calle Madre Selva 110 de la Cooperativa MUSA, del Distrito de la Molina, fue creada un 15 de febrero de 1979 mediante R.D N°0211; se inició por la gestión de un grupo de </p>
+  <!-- Quiénes Somos --> 
+ 
+  <div class="w3-row w3-container" id="nosotros">
+    <div class="w3-center w3-padding-64" >
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Conócenos </span>
+    </div>    
+    
+<div class="tab"  >
+  
+    <button class="tablinks" onclick="openCity(event, 'Misión')" id="defaultOpen">Misión</button>
+  <button class="tablinks" onclick="openCity(event, 'Visión')">Visión</button>
+  <button class="tablinks" onclick="openCity(event, 'Reseña Histórica')">Reseña histórica</button>
 </div>
+
+<div id="Misión" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Misión</h3>
+  <p>Brindamos una formación integrala nuestros educandos y desarrollamos el pensamiento reflexivo-crítico, el proceso de la meta-cognición, promoviendo el desarrollo de sus capacidades emprendedoras orientadas a la resolución de problemas en su visa diaria; teniendo como base la práctica de los valores cristianos, imitando a nuetsro SAN JOSÉ MARELLO, ejemplo de vida y paz para enfrentarse al mundo con éxito.</p>
+</div>
+
+<div id="Visión" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Visión</h3>
+  <p>La I.E N°1220 "SAN JOSÉ MARELLO", en el 2021 será reconocida como líder por promover una educación cristiana, científica, humanista y tecnológica, generando valores y capacidades emprendedoras en los estudiantes.</p>
+  <p> En el marco de una educación inclusiva e intercultural con igualdad de oportunidad para todos y fomentando una educación para la gestión de riesgos y conciencia ambiental. </p>
+</div>
+
+<div id="Reseña Histórica" class="tabcontent" >
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Reseña Histórica</h3>
+  <p>La Institución Educativa "San José Marello" 1220, ubicada en la calle Madre Selva 110 de la Cooperativa MUSA, del Distrito de la Molina, fue creada un 15 de febrero de 1979 mediante R.D N°0211; se inició por la gestión de un grupo de....</p>
+</div>    
     
-    
+
     
     
     
@@ -199,12 +260,14 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
   </div>
 
   <!-- Calendario Académico -->
-  <div class="w3-row-padding" id="about">
-    <div class="w3-center w3-padding-64">
-      <h3>Calendario Académico - Escolar 2019</h3>
-      <p>"Año de la lucha contra la corrupción e impunidad"</p>
+      
+      
+  <div class="w3-row w3-container" id="about">
+    <div class="w3-center w3-padding-64" >
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Calendario Académico </span>
     </div>
-
+      
+      
 <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
         <li class="w3-red w3-xlarge w3-padding-32">Marzo</li>
@@ -281,7 +344,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif, sans-serif; src:url(old.t
         </li> <br/>       <li>
         </li> <br/>       <li>
         </li> <br/> <li>
-        </li> <br/> 
+        </li> <br/> <br/> 
       </ul>
       </div>
 
@@ -449,6 +512,27 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
+    
+    
+    /* QUIENES SOMOS */
+    
+    
+    function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 </script>
 
 </body>
